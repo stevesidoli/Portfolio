@@ -98,4 +98,15 @@ section.skills {
 
 .techStackEntry {
     padding: 20px;
+    p {
+        text-align: center;
+    }
 }
+
+section.contact {
+    min-height: 100vh;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
