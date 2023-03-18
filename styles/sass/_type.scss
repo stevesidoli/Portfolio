@@ -1,0 +1,79 @@
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+a:hover {
+    color: #29e98c;
+}
+
+h1 {
+    font-size: 5rem;
+    padding-top: 15px;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+h3.nameSubTitle {
+    text-align: right;
+}
+
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+h5 {
+    font-size: 1.8rem;
+    position: relative;
+    margin-top: 44px;
+}
+
+h6 {
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+h7 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+}
+
+blockquote.nameSubTitleBk {
+    margin-top: 1px;
+margin-right: 1px;
+}
+
+.wordHighlight {
+    color: #29e98c;
+}
+
+p.introText {
+    // color: #999999;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.sectionTitle {
+    border: 1px solid #565656;
+    border-radius: 30px;
+    padding: 10px;
+    text-transform: lowercase;
+}
