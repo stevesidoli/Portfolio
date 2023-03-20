@@ -1,3 +1,5 @@
+
+
 // Here is where I save the variables in my mobile-sized menu using the querySelector document method to return my CSS elements.
 
 const mobileMenu = document.querySelector (".mobileMenu");
@@ -49,3 +51,7 @@ window.onbeforeunload = () => {
       form.reset();
     }
   }
+
+
+  
+

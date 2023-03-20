@@ -1,14 +1,26 @@
 html { 
         scroll-behavior: smooth;
-        background-color: #c0c0c0;
+        background-color: #1f1f20;
         color: #ffffff;
         font-size: 62.5%;
+}
+
+body {
+  opacity: 0;
+  transition-duration: 0.7s;
+  transition-property: opacity;
+}
+
+body.fade {
+  opacity: 1;
 }
 
 .wrapper {
     background-color: #1f1f20;
     margin: 0 auto;
 }
+
+
 
 .flexContainerRow {
     display: flex;
@@ -186,3 +198,6 @@ button.contactButton {
   .mobileMenu {
     display: none;
   }
+
+  //   on page load transition styles
+

@@ -268,23 +268,6 @@ header.portfolioHeader {
   color: #29e98c;
 }
 
-li.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 .leftSideBar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -398,9 +381,21 @@ footer p {
 
 html {
   scroll-behavior: smooth;
-  background-color: #c0c0c0;
+  background-color: #1f1f20;
   color: #ffffff;
   font-size: 62.5%;
+}
+
+body {
+  opacity: 0;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+body.fade {
+  opacity: 1;
 }
 
 .wrapper {
@@ -845,7 +840,7 @@ p.introText {
     list-style-type: none;
     top: 70px;
     right: 70px;
-    border: 1px solid #565656;
+    border: 0px;
     background-color: transparent;
     border-radius: 50%;
     z-index: 11;
@@ -854,7 +849,7 @@ p.introText {
     text-decoration: none;
   }
   button.toggleButton i {
-    color: #565656;
+    color: #ffffff;
     padding: 6px;
     margin: 10px;
   }
