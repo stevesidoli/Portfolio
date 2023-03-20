@@ -387,7 +387,7 @@ html {
 }
 
 body {
-  opacity: 0;
+  opacity: 0.01;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
   -webkit-transition-property: opacity;
