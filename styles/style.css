@@ -820,6 +820,9 @@ p.introText {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+  .mobileMenuNav li {
+    list-style-type: none;
+  }
   .mobileLink a {
     color: #fff;
     font-size: 4rem;
