@@ -98,6 +98,11 @@ header.portfolioHeader {
       }
   }
 
+  .imgContainerMediaQuery {
+
+    display: none;
+  }
+
   .headerMidColumn {
     padding: 30px 150px 0px 175px;
     max-width: 60%;
@@ -106,7 +111,6 @@ header.portfolioHeader {
   .socialsIcons {
       list-style-type: none;
       position: relative;
-      margin-left: -42px;
         li {
           display: inline-block;
         a {
@@ -129,9 +133,6 @@ header.portfolioHeader {
       position: relative;
       margin-left: 200px;
     }
-
-
-
 
 
 

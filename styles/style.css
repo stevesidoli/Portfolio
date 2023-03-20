@@ -350,6 +350,10 @@ li.tooltip .tooltiptext {
   border-radius: 30px;
 }
 
+.imgContainerMediaQuery {
+  display: none;
+}
+
 .headerMidColumn {
   padding: 30px 150px 0px 175px;
   max-width: 60%;
@@ -358,7 +362,6 @@ li.tooltip .tooltiptext {
 .socialsIcons {
   list-style-type: none;
   position: relative;
-  margin-left: -42px;
 }
 .socialsIcons li {
   display: inline-block;
@@ -390,6 +393,7 @@ footer {
 footer p {
   text-align: center;
   color: #1f1f20;
+  padding-top: 14px;
 }
 
 html {
@@ -559,6 +563,7 @@ fieldset {
 
 input[type=text],
 input[type=email] {
+  color: #ffffff;
   font-size: 1.8rem;
   height: 48px;
   padding: 0 13px;
@@ -605,7 +610,7 @@ textarea {
   margin-top: 30px;
 }
 
-button {
+button.contactButton {
   font-size: 1.8rem;
   background-color: #29e98c;
   border: none;
@@ -617,6 +622,14 @@ button {
   margin: 0 auto;
   margin-top: 30px;
   cursor: pointer;
+}
+
+button.toggleButton {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
 }
 
 html {
@@ -694,4 +707,193 @@ p.introText {
   border-radius: 30px;
   padding: 10px;
   text-transform: lowercase;
+}
+
+@media screen and (max-width: 1560px) {
+  .leftSideBar {
+    max-height: 725px;
+  }
+  .headerMidColumn {
+    max-width: 90%;
+    padding: 30px 50px 0px 75px;
+  }
+}
+@media screen and (max-width: 1380px) {
+  h1 {
+    font-size: 4rem;
+  }
+  p.introText {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  .leftSideBar {
+    max-height: 660px;
+  }
+  .socialsIcons li {
+    margin-right: -10px;
+  }
+  .headerMidColumn {
+    max-width: 90%;
+    padding: 30px 50px 0px 75px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .leftSideBar {
+    max-height: 600px;
+  }
+  .headerMidColumn {
+    max-width: 100%;
+    padding: 0px 50px 0px 75px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .portfolioHeader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headerColumns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerRightColumn {
+    display: none;
+  }
+  .leftSideBar {
+    display: none;
+    max-width: 90%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .sectionsColumns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navBar {
+    display: none;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+  }
+  .mobileMenu {
+    display: block;
+    position: fixed;
+    background: #1f1f20;
+    padding-top: 4rem;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+  .mobileMenuNav {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .mobileLink a {
+    color: #fff;
+    font-size: 4rem;
+    text-decoration: none;
+  }
+  .mobileLink a:hover {
+    color: #29e98c;
+  }
+  .menuDrop {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .toggleButtonDiv {
+    padding: 0px 75px 0px 75px;
+  }
+  button.toggleButton {
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    list-style-type: none;
+    top: 70px;
+    right: 70px;
+    border: 1px solid #565656;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 11;
+  }
+  button.toggleButton li a {
+    text-decoration: none;
+  }
+  button.toggleButton i {
+    color: #565656;
+    padding: 6px;
+    margin: 10px;
+  }
+  button.toggleButton i:hover {
+    color: #29e98c;
+  }
+  button.toggleButton i.hamburgBox {
+    padding: 5px 3px 7px 4px;
+  }
+  .closeX {
+    display: none;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .toggleButtonDiv {
+    padding: 0px 175px 0px 75px;
+  }
+  .sectionsRowsMid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .toggleButtonDiv {
+    padding: 0px 375px 0px 75px;
+  }
+  .headerColumns {
+    padding: 0px;
+  }
+  button.toggleButton {
+    top: 30px;
+    right: 30px;
+  }
+  .headerMidColumn {
+    padding: 10px 50px 0px 75px;
+  }
+  .sectionTitle {
+    display: none;
+  }
 }
