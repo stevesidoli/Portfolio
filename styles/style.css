@@ -230,7 +230,6 @@ header.portfolioHeader {
   background-repeat: no-repeat;
   min-height: 100vh;
   margin-top: 0px;
-  background-image: url("./../assets/headerBG.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +249,7 @@ header.portfolioHeader {
   overflow: hidden;
   position: fixed;
   list-style-type: none;
-  top: 60px;
+  top: 100px;
   margin-left: -50px;
   border: 1px solid #565656;
   border-radius: 30px;
@@ -261,6 +260,8 @@ header.portfolioHeader {
 }
 .navBar i {
   color: #565656;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   padding: 6px;
   margin: 10px;
 }
@@ -327,6 +328,10 @@ header.portfolioHeader {
           align-items: center;
   margin-top: -20px;
 }
+.leftSideBarBot i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 
 .imgContainer img {
   max-width: 100%;
@@ -338,7 +343,7 @@ header.portfolioHeader {
 }
 
 .headerMidColumn {
-  padding: 30px 150px 0px 175px;
+  padding: 30px 10px 0px 100px;
   max-width: 60%;
 }
 
@@ -401,6 +406,8 @@ body.fade {
 .wrapper {
   background-color: #1f1f20;
   margin: 0 auto;
+  width: 1920px;
+  max-width: 90%;
 }
 
 .flexContainerRow {
@@ -483,7 +490,7 @@ section.contact {
 
 .projectsColumns {
   padding: 0px 100px 0px 0px;
-  min-width: 33%;
+  min-width: 24%;
 }
 
 .projectsImg {
@@ -495,6 +502,8 @@ section.contact {
   border: solid 2px transparent;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .projectsImg img:hover {
   border: solid 2px #29e98c;
@@ -629,6 +638,11 @@ button.toggleButton {
 
 html {
   font-family: "Inter", sans-serif;
+}
+
+a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 a:hover {

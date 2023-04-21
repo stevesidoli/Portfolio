@@ -2,7 +2,7 @@ header.portfolioHeader {
     background-repeat: no-repeat;
     min-height: 100vh;
     margin-top: 0px;
-    background-image: url("./../assets/headerBG.jpg");
+    // background-image: url("./../assets/headerBG.jpg");
     display: flex;
     align-items: center;
 }
@@ -16,7 +16,7 @@ header.portfolioHeader {
     overflow: hidden;
     position: fixed;
     list-style-type: none;
-    top: 60px; 
+    top: 100px; 
     margin-left: -50px;
     border: 1px solid #565656;
     border-radius: 30px;
@@ -24,11 +24,12 @@ header.portfolioHeader {
       li {
         a {
           text-decoration: none;
+          
           }
         }
         i {
           color: #565656;
-          
+          transition: 0.3s;
           padding: 6px;
           margin: 10px;
             &:hover {
@@ -71,6 +72,9 @@ header.portfolioHeader {
     justify-content: center;
     align-items: center;
     margin-top: -20px;
+      i {
+        transition: 0.3s;
+      }
   }
 
   .imgContainer {
@@ -86,7 +90,7 @@ header.portfolioHeader {
   }
 
   .headerMidColumn {
-    padding: 30px 150px 0px 175px;
+    padding: 30px 10px 0px 100px;
     max-width: 60%;
   }
 

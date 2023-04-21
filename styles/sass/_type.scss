@@ -2,8 +2,13 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
+a {
+    transition: 0.3s;
+}
+
 a:hover {
     color: #29e98c;
+    
 }
 
 h1 {
